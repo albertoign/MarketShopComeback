@@ -1,0 +1,23 @@
+ion-col{
+    border: 1;
+    border-style: solid;
+    border-color: black;
+}
+p{
+    border-style: solid;
+    border-color: black;
+}
+
+ion-button{
+    --background: #ae2727;
+    --background-hover: #ae2727;
+    --background-activated: black;
+    --background-focused: black;
+}
+
+ion-fab-button{
+    --background: #ae2727;
+    --background-hover: #ae2727;
+    --background-activated: black;
+    --background-focused: black;
+}

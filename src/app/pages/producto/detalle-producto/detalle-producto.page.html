@@ -1,0 +1,103 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>detalle-producto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">detalle-producto</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid *ngIf="producto">
+    <ion-row style="justify-content: center;">
+      <ion-col size="6" style="border-style:groove; border-color: #ae2727;">
+        <img [src]=" producto.foto_p " />
+        <p style="text-align: center;">{{ producto.nombre_producto }}</p>
+        <p style="text-align: center;">Precio: ${{ producto.precio_p }}</p>
+        <ion-item>
+          
+        </ion-item>
+        <ion-button size="small">Agregar al Carro</ion-button>
+      </ion-col>
+    </ion-row>
+    <hr>
+    <ion-row style="justify-content: center;">
+      <table style="border-style:solid;">
+        <thead>
+          <tr>
+            <th>Información Nutricional</th>
+          </tr>
+          <tr>
+            <td>Energía (Kcal)</td>
+          </tr>
+          <tr>
+            <td>Proteínas (g)</td>
+          </tr>
+          <tr>
+            <td>Grasa total (g)</td>
+          </tr>
+          <tr>
+            <td>Hidratos de carbono disponibles (g)</td>
+          </tr>
+          <tr>
+            <td>Fibra dietética total (g)</td>
+          </tr>
+          <tr>
+            <td>Sodio (mg)</td>
+          </tr>
+          <tr>
+            <td>Potasio (mg)</td>
+          </tr>
+          <tr>
+            <td>Vitamina A (µ ER)</td>
+          </tr>
+          <tr>
+            <td>Vitamina C (mg)</td>
+          </tr>
+          <tr>
+            <td>Vitamina E (mg ET)</td>
+          </tr>
+          <tr>
+            <td>Ac. Fólico (µg)</td>
+          </tr>
+          <tr>
+            <td>Calcio (mg)</td>
+          </tr>
+          <tr>
+            <td>Hierro (mg)</td>
+          </tr>
+        </thead>
+      </table>
+    </ion-row>
+    
+
+
+    <ion-card >
+      <ion-card-header>
+        {{ producto.nombre_producto }}
+      </ion-card-header>
+      <ion-card-content>
+        <p><strong>Código del Producto:</strong> {{ producto.cod_producto }}</p>
+        <p><strong>Fecha de Emisión:</strong> {{ producto.f_emision }}</p>
+        <p><strong>Fecha de Vencimiento:</strong> {{ producto.f_vencimiento }}</p>
+        <p><strong>Descripción:</strong> {{ producto.descripcion_p }}</p>
+        <p><strong>Foto:</strong> {{ producto.foto_p }}</p>
+        
+        <!-- Agrega más propiedades según sea necesario -->
+      </ion-card-content>
+    </ion-card>
+
+    <ion-note *ngIf="!producto">Producto no encontrado.</ion-note>
+
+
+    <img *ngIf="imagenBase64" [src]="imagenBase64" alt="Imagen del Producto">
+  <ion-note *ngIf="!imagenBase64">Imagen no encontrada.</ion-note>
+
+
+
+  </ion-grid>
+
+</ion-content>

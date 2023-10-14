@@ -1,0 +1,144 @@
+ion-grid {
+    width: 100%;
+    margin-top: 30%;
+}
+
+ion-searchbar {
+    width: 50%;
+}
+
+ion-menu-button {
+    width: 100%;
+    
+    bottom: 0%;
+}
+
+ion-grid ion-row {
+    width: 100%;
+
+
+}
+
+ion-grid ion-row ion-button {
+    width: 50%;
+    margin: 0px 0px 0px 100px;
+    padding: 0px 0px 0px 0px;
+}
+
+ion-grid ion-row ion-col h4  {
+    text-align: center;
+
+}
+
+
+ ion-row ion-col ion-button {
+    --background: #ae2727;
+    --background-hover: #ae2727;
+    --background-activated: black;
+    --background-focused: black;
+    margin: 0px 0px 0px 50px;
+}
+
+ion-content ion-button{
+    --background: #ae2727;
+    --background-hover: #ae2727;
+    --background-activated: black;
+    --background-focused: black;
+}
+
+ion-card-title{
+    text-align: center;
+}
+
+ion-content {
+    --background:white;
+}
+.ADMIN{
+    margin-top: auto;
+    margin-left: 200px;
+    float: left;
+}
+.sub{
+    text-align: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: dashed;
+    
+}
+.todo{
+    align-content: center;
+    align-items: center;
+    background-color: black;
+    
+}
+.Busca{
+    align-self: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    float: inline-start;
+}
+.date{
+    align-self: auto;
+    margin-top: -40px;
+    float: inline-end;
+    width: 50%;
+
+}
+.banner1{
+    margin-top: -100px;
+}
+.gri{
+    background-color: black;
+    color: white;
+}
+h2{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+.titulodeini{
+    margin-top: 70px;
+    margin-left: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    height: auto;
+    font-size: 25px; 
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    align-content: center;
+}
+
+//IMAGEN MARKETSHOP
+.iagendearriba{
+    width: auto;
+    height: auto;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+//BARRA HEADER
+.barra{
+    background-color: #ae2727;
+}
+
+:root {
+	--ion-color-micolor: #ae2727;
+	--ion-color-micolor-rgb: 174,39,39;
+	--ion-color-micolor-contrast: #ffffff;
+	--ion-color-micolor-contrast-rgb: 255,255,255;
+	--ion-color-micolor-shade: #992222;
+	--ion-color-micolor-tint: #b63d3d;
+}
+.botonA{
+
+  --background: #000000; 
+  --color: #030303; 
+  --border-radius: 10px; 
+  --box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.1); 
+
+  transition: transform 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);}
+}

@@ -1,0 +1,234 @@
+
+<ion-content class="todo">
+  <app-componente1></app-componente1>
+  <br>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <h1>BIENVENIDO A MARKETSHOP</h1>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col>
+        <img src="/assets/inicio verduras.jpg" alt="" class="iagendearriba">
+      </ion-col>
+    </ion-row>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Sus productos de necesidad diaria</ion-card-title>
+
+      </ion-card-header>
+
+      <ion-card-content>
+        Tenemos descuentos y ofertas disponibles para que no te quedes sin tu oportunidad de sorprender a ese ser
+        especial cotiza con nosotros
+      </ion-card-content>
+
+    </ion-card>
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Frescos y orgánicos
+        </ion-card-title>
+
+      </ion-card-header>
+
+      <ion-card-content>
+        Nos preocupamos de que nuestros productos cumplan con los mejores estandares de calidad, por esos todos los
+        productos utilizados son frescos diariamente
+      </ion-card-content>
+    </ion-card>
+
+
+  </ion-grid>
+
+
+
+
+
+  <ion-grid>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size-md="6">
+        <img src="/assets/banner.jfif" alt="" width="1000px" height="150px" class="banner1">
+      </ion-col>
+    </ion-row>
+    <hr>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size-md="6">
+        <img src="/assets/banner2.jpg" alt="" width="1000px" height="150px" class="banner2">
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <ion-grid>
+    <h2 style="text-align: center;">Comprar por <span style="color: #ae2727;">Categoría</span></h2>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="8">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Verduras</ion-card-title>
+          </ion-card-header>
+          <img alt="" src="/assets/Verduras.png">
+          <ion-button  [routerLink]="['/producto']"  class="botonA">Comprar</ion-button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="8">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Jugos</ion-card-title>
+          </ion-card-header>
+          <img alt="" src="/assets/jugos.avif">
+          <ion-button  [routerLink]="['/producto']"    class="botonA">Comprar</ion-button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="8">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Carnes</ion-card-title>
+          </ion-card-header>
+          <img alt="" src="/assets/carne.jpg">
+          <ion-button    [routerLink]="['/producto']"         class="botonA">Comprar</ion-button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="8">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>Frutas</ion-card-title>
+          </ion-card-header>
+          <img alt="" src="/assets/Frutas.jpg">
+          <ion-button class="botonA">Comprar</ion-button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  <ion-grid class="gri">
+    <ion-row class="ion-justify-content-start-center">
+      <ion-col size-sm="12" size-md="12">
+        <ion-list>
+          <h2 class="ion-text-uppercase" style="text-align: center; color: #ae2727;">contáctanos</h2>
+          <ion-item>
+
+            <ion-input type="text" placeholder="Ingresa tu nombre">
+            </ion-input>
+            <hr>
+            <ion-input type="text" placeholder="Ingresa tu correo"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input type="text" placeholder="Ingresa tu número"></ion-input>
+            <ion-input type="text" placeholder="Ingresa el asunto"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-textarea placeholder="Ingrese el mensaje" [autoGrow]="true" maxlength="800">
+            </ion-textarea>
+          </ion-item>
+
+        </ion-list>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="8" size-sm="5" size-md="4">
+        <hr>
+        <ion-button style="margin-left: 72px;">Enviar</ion-button>
+      </ion-col>
+    </ion-row>
+    <hr>
+    <ion-row>
+      <ion-col>
+        <ion-list>
+          <h2 style="text-align: center; ">Suscríbete Para Mas Recomendaciones</h2>
+          <ion-item>
+            <ion-input style="text-align: center;" type="text"
+              placeholder="Introduce tu correo electrónico"></ion-input>
+          </ion-item>
+
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-justify-content-center">
+      <ion-col size="8" size-sm="5" size-md="4" size-lg="12">
+        <hr>
+        <ion-button style="margin-left: 72px;">Suscríbete</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
+
+
+  <ion-grid class="gri">
+    <ion-row class="ion-text-center">
+      <ion-col size-sm="12" size-md="12" size-lg="12" size-xl="12">
+        <h4>MarketShop</h4>
+      </ion-col>
+
+    </ion-row>
+
+    <ion-row>
+      <ion-col size="12">
+        <p style="text-align: center;">Todo Lo Que Nececitas En Un Solo Lugar Y A Un Gran Precio, Siguenos En Nuestras
+          Redes Sociales Para Estar
+          Atento
+          A Toda La Informacion Y Los Descuentos Que Tengamos.</p>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <h4>Nuestra Ubicación</h4>
+      </ion-col>
+    </ion-row>
+    <ion-row style="text-align: center;">
+      <ion-col size-md="12">
+        <a href="" style="color:black;">Av. Providencia 1208</a>
+      </ion-col>
+
+    </ion-row>
+    <div>
+      <ion-row>
+        <ion-col>
+          <h4>Enlaces Rápidos</h4>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="12" size-sm="6">
+          <a href="pagina1" style="margin-left: 45%;">Inicio</a>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <a href="" style="margin-left: 42%;">Producto</a>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <a href="" style="margin-left: 42%;">Contacto</a>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col>
+          <h4>Todos los derechos reservados ©</h4>
+        </ion-col>
+      </ion-row>
+    </div>
+  </ion-grid>
+
+</ion-content>

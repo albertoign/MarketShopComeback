@@ -1,0 +1,71 @@
+
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+
+#container p.ingresa{
+  color: black
+}
+
+#container ion-button.button{
+  color: black;
+}
+
+.title{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: medium;
+}
+
+ion-button{
+  --background: #ae2727;
+  --background-hover: #ae2727;
+  --background-activated: black;
+  --background-focused: black;
+
+}
+
+
+
+.register{
+  margin-left: 200px;
+  margin-top: -85px;
+  width: auto;
+}
+
+ion-button{
+  text-align: right;
+  position: relative;
+  bottom: 15px;
+}
+.ADMIN{
+  position: relative;
+  margin-left: 100px;
+  margin-top: -130px;
+}
+
+

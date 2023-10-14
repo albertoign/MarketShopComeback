@@ -1,0 +1,39 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar color="micolor" class="barra">
+      <br>
+      <ion-title class="sub" style="font-size: x-large;">MarketShop</ion-title>
+
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">
+    <ion-button expand="block" [routerLink]="['/vista-admin']">Inicio</ion-button> <br>
+    <ion-button expand="block" [routerLink]="['/producto']">Productos</ion-button> <br>
+    <ion-button expand="block" [routerLink]="['/listado-u']">Listado Usuarios</ion-button>
+    <ion-button expand="block" [routerLink]="['/listado-r']">Listado Roles</ion-button>
+    <ion-button expand="block" [routerLink]="['/tipo-p']">Listado Tipo Productos</ion-button>
+    <ion-button expand="block" [routerLink]="['/listado-p']">Listado Productos</ion-button> <br><br><br><br><br><br><br><br>
+    <br>
+    <br>
+    <br>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header class="naa" style="align-content: center; min-height: auto;">
+    
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button auto-hide="false"></ion-menu-button>
+      </ion-buttons>
+      <ion-searchbar placeholder="Buscar aquí..." class="Busca"></ion-searchbar>
+      <ion-row><span class="material-symbols-outlined" [routerLink]="['/home']">
+        person
+      </span></ion-row>
+    </ion-toolbar>
+
+
+  </ion-header>
+
+</div>

@@ -1,0 +1,46 @@
+
+
+<ion-content>
+  <ion-card class="container">
+    <ion-card-header>
+      <ion-card-title>Editar mis datos</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <form [formGroup]="formulario">
+        <ion-item>
+          <ion-label>Rut</ion-label>
+          <ion-input  type="text" placeholder="20.456.212-9" readonly="true"></ion-input>
+        </ion-item><br>
+
+        <ion-item>
+          <ion-label>Nombre</ion-label>
+          <ion-input type="text" placeholder="Julio Diaz Rojas" readonly="true"></ion-input>
+        </ion-item><br>
+
+        <ion-item>
+          <ion-label position="floating">Email</ion-label>
+          <ion-input formControlName="email" type="email" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Celular</ion-label>
+          <ion-input formControlName="celular" type="tel" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Dirección</ion-label>
+          <ion-input formControlName="direccion" type="text" required></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Comuna</ion-label>
+          <ion-input formControlName="comuna" type="text" required></ion-input>
+        </ion-item>
+
+        <ion-button expand="block" routerLink="/pagina1">Guardar</ion-button> 
+      </form>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="block" routerLink="/perfilusario">Volver</ion-button>
+</ion-content>

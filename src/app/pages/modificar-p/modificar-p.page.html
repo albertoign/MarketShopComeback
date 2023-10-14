@@ -1,0 +1,60 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">modificar-p</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <h2 class="ion-text-center">Producto a Modificar</h2>
+  <ion-item>
+    <ion-label position="floating">Nombre Producto</ion-label>
+    <ion-input type="text" [(ngModel)]="nombreProducto"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Fecha Emisión</ion-label>
+    <ion-input type="date" [(ngModel)]="fEmision" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Fecha Vencimiento</ion-label>
+    <ion-input type="date" [(ngModel)]="fVencimiento" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Descripción</ion-label>
+    <ion-input type="text" [(ngModel)]="descripcionP" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Foto Producto</ion-label>
+    <ion-input type="file" [(ngModel)]="fotoP" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Precio</ion-label>
+    <ion-input type="number" [(ngModel)]="precioP" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Stock</ion-label>
+    <ion-input type="number" [(ngModel)]="stockP" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Tipo Producto</ion-label>
+    <ion-input type="text" [(ngModel)]="tipo_p_id_tipo" ></ion-input>
+  </ion-item>
+
+
+  
+ 
+
+  <ion-button shape="block" (click)="editar()">Guardar Cambio</ion-button>
+  <ion-button shape="block" [routerLink]="['/listado-p']">Volver</ion-button>
+</ion-content>

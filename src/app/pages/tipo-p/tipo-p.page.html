@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">tipo-p</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  
+  <h2 class="ion-text-center">Listado de Tipo de Productos</h2>
+
+  <ion-searchbar placeholder="Buscar Tipo de  Productos" ></ion-searchbar>
+  <ion-list>
+    <ion-item-sliding *ngFor="let x of arregloTipo">      
+  
+      <ion-item>
+        <ion-label>
+          <h1>{{ x.id_tipo }}</h1>
+          <h2>{{ x.nombre_tipo_p }}</h2>
+          
+        </ion-label>
+      </ion-item>
+  
+      <ion-item-options>
+        <ion-item-option (click)="modificar(x)">
+          <ion-icon slot="bottom" name="pencil-sharp"></ion-icon>
+          Modificar
+        </ion-item-option>
+        <ion-item-option color="danger" (click)="eliminar(x)">
+          <ion-icon slot="bottom" name="trash"></ion-icon>
+          Eliminar
+        </ion-item-option>
+      </ion-item-options>
+
+    </ion-item-sliding>
+  </ion-list>
+
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button [routerLink]="['/agregar-t']">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+</ion-content>
+<ion-button expand="block" [routerLink]="['/pagina1']">Volver</ion-button>

@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>RECUPERAR CONTRASEÑA</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <h2>Ingrese el correo con el que se ha registrado</h2>
+    <form class="form col-sm-12">
+      <ion-item>
+        <ion-label position="floating">Ingrese su correo</ion-label>
+        <ion-input type="email" placeholder="Correo" class="correo"></ion-input>
+      </ion-item>
+      <div class="form_button">
+        <ion-button class="salir" routerLink="/home">Volver</ion-button>
+        <ion-button class="enviar" (click)="enviarCorreo()">Enviar link</ion-button>
+      </div>
+    </form>
+  </div>
+</ion-content>

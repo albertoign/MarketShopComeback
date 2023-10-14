@@ -1,0 +1,158 @@
+ion-grid {
+    width: 100%;
+    margin-top: 30%;
+}
+
+ion-searchbar {
+    width: 50%;
+}
+
+ion-menu-button {
+    width: 100%;
+    
+    bottom: 0%;
+}
+
+ion-grid ion-row {
+    width: 100%;
+
+
+}
+
+ion-grid ion-row ion-button {
+    width: 50%;
+    margin: 0px 0px 0px 100px;
+    padding: 0px 0px 0px 0px;
+}
+
+.img1 {
+    width: 60%;
+    height: 60%;
+    margin-top: auto;
+    border-color: black;
+    border-radius: 100px;
+
+}
+
+
+
+
+
+ion-grid ion-row ion-col h4  {
+    text-align: center;
+
+}
+
+
+ ion-row ion-col ion-button {
+    --background: #ae2727;
+    --background-hover: #ae2727;
+    --background-activated: black;
+    --background-focused: black;
+    margin: 0px 0px 0px 50px;
+}
+
+ion-content ion-button{
+    --background: #ae2727;
+    --background-hover: #ae2727;
+    --background-activated: black;
+    --background-focused: black;
+}
+
+ion-card-title{
+    text-align: center;
+}
+
+ion-content {
+    --background:white;
+}
+.ADMIN{
+    margin-top: auto;
+    margin-left: 200px;
+    float: left;
+}
+.sub{
+    text-align: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: dashed;
+    
+}
+.todo{
+    align-content: center;
+    align-items: center;
+    background-color: black;
+    
+}
+.Busca{
+   width: 85%;
+   position: relative;
+   top: 15px; 
+}
+.date{
+    align-self: auto;
+    margin-top: -40px;
+    float: inline-end;
+    width: 50%;
+
+}
+.banner1{
+    margin-top: -100px;
+}
+.gri{
+    background-color: black;
+    color: white;
+}
+h2{
+    color: black;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    align-content: center;
+}
+.iagendearriba{
+    width: auto;
+    height: auto;
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.naa{
+    margin:initial;
+    height: auto;
+    background-color: #c0b5b5;
+}
+:root {
+	--ion-color-micolor: #ae2727;
+	--ion-color-micolor-rgb: 174,39,39;
+	--ion-color-micolor-contrast: #ffffff;
+	--ion-color-micolor-contrast-rgb: 255,255,255;
+	--ion-color-micolor-shade: #992222;
+	--ion-color-micolor-tint: #b63d3d;
+}
+
+
+h1{
+    position: relative;
+    bottom: 60px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: black;
+}
+
+
+.icon{
+    margin: 0px;    
+}
+
+.material-symbols-outlined{
+    position: relative;
+    left: 86%;
+    bottom: 26px;
+    height: 100%;
+    background-color: #ae2727;
+    padding: 2%;
+    
+}

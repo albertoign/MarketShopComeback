@@ -1,0 +1,55 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">modificar_u</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <h2 class="ion-text-center">Usuario a Modificar</h2>
+  <ion-item>
+    <ion-label position="floating">Nombre Usuario</ion-label>
+    <ion-input type="text" [(ngModel)]="nombreUsuario"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Apellido Usuario</ion-label>
+    <ion-input type="text" [(ngModel)]="apellidoUsuario" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Teléfono Usuario</ion-label>
+    <ion-input type="text" [(ngModel)]="telefonoUsuario" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Dirección Usuario</ion-label>
+    <ion-input type="text" [(ngModel)]="direccionUsuario" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Correo Usuario</ion-label>
+    <ion-input type="text" [(ngModel)]="correoUsuario" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Clave Usuario</ion-label>
+    <ion-input type="text" [(ngModel)]="claveUsuario" ></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Rol Usuario</ion-label>
+    <ion-input type="text" [(ngModel)]="rol_id_rol" ></ion-input>
+  </ion-item>
+
+  
+
+
+
+  <ion-button shape="block" (click)="editar()">Guardar Cambio</ion-button>
+  <ion-button shape="block" [routerLink]="['/listado-u']">Volver</ion-button>
+</ion-content>

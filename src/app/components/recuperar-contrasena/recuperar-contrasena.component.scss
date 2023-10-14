@@ -1,0 +1,28 @@
+
+  
+
+h2{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: medium;
+  }
+  
+ ion-title{
+    text-align: center;
+    font-size: medium;
+  }
+  
+  ion-button{
+    --background: #ae2727;
+    --background-hover: #ae2727;
+    --background-activated: black;
+    --background-focused: black;
+  
+  }
+   
+.button-native::after {
+    inset: 0px;
+    position: relative;
+    content: "";
+    opacity: 0;  
+}

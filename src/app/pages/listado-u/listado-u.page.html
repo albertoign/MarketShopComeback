@@ -1,0 +1,63 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">listado_u</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <h2 class="ion-text-center">Listado de Usuarios</h2>
+
+  <ion-searchbar placeholder="Buscar Usuarios"></ion-searchbar>
+  <ion-list>
+    <ion-item-sliding *ngFor="let a of arregloUsuarios">
+
+      <ion-item>
+        <ion-label>
+          <h1>Usuarios</h1>
+          <h3>ID</h3>
+          <p>{{ a.id_usuario }}</p>
+          <h3>Nombre</h3>
+          <p>{{ a.nombre_usuario }}</p>
+          <h3>Apellido</h3>
+          <p>{{ a.apellido_usuario }}</p>
+          <h3>Teléfono</h3>
+          <p>{{ a.telefono_usuario }}</p>
+          <h3>Dirección</h3>
+          <p>{{ a.direccion_usuario }}</p>
+          <h3>Correo</h3>
+          <p>{{ a.correo_usuario }}</p>
+          <h3>Clave</h3>
+          <p>{{ a.clave_usuario }}</p>
+          <h3>Rol</h3>
+          <p>{{ a.rol_id_rol }}</p>
+          
+        </ion-label>
+      </ion-item>
+
+      <ion-item-options>
+        <ion-item-option (click)="modificar(a)">
+          <ion-icon slot="bottom" name="pencil-sharp"></ion-icon>
+          Modificar
+        </ion-item-option>
+        <ion-item-option color="danger" (click)="eliminar(a)">
+          <ion-icon slot="bottom" name="trash"></ion-icon>
+          Eliminar
+        </ion-item-option>
+      </ion-item-options>
+
+    </ion-item-sliding>
+  </ion-list>
+
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button [routerLink]="['/agregar-u']">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+</ion-content>
+<ion-button expand="block" [routerLink]="['/pagina1']">Volver</ion-button>
