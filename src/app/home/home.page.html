@@ -1,7 +1,7 @@
 
 
 
-<br>
+
 <ion-content>
 
   <ion-toolbar>
@@ -16,7 +16,7 @@
     <ion-card-content>
       <form [formGroup]="formularioLogin">
         <ion-item>
-          <ion-label position="floating">Nombre</ion-label>
+          <ion-label position="floating">Correo</ion-label>
           <ion-input formControlName="nombre"></ion-input>
         </ion-item>
         <ion-item>
@@ -25,15 +25,15 @@
         </ion-item>
       </form>
       <br>
-      <ion-button expand="block" (click)="ingresar()">
+      <ion-button id="ingresar" (click)="ingresar()">
         Ingresar
       </ion-button>
+    
       
-      <ion-button expand="block" (click)="ingresarAdmin()" [routerLink]="['/vista-admin']">Administrador</ion-button>
-      
-      <ion-button expand="block" [routerLink]="['/registro']">Registrarse</ion-button>
+      <ion-button id="registrarse" [routerLink]="['/agregar-u']">Registrarse</ion-button>
+      <hr>
            
-      <ion-button expand="block" [routerLink]="['/recuperar-contrasena']">Recuperar Contraseña</ion-button>
+      <ion-button id="recuperar"  [routerLink]="['/recuperar-contrasena']">Recuperar Contraseña</ion-button>
 
     </ion-card-content>
   </ion-card>
