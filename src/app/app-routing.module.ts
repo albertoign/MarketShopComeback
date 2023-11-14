@@ -31,86 +31,8 @@ const routes: Routes = [
     path: 'producto',
     loadChildren: () => import('./pages/producto/producto.module').then( m => m.ProductoPageModule)
   },
-  {
-    path: 'apio',
-    loadChildren: () => import('./pages/apio/apio.module').then( m => m.ApioPageModule)
-  },
-  {
-    path: 'brocoli',
-    loadChildren: () => import('./pages/brocoli/brocoli.module').then( m => m.BrocoliPageModule)
-  },
-  {
-    path: 'buey',
-    loadChildren: () => import('./pages/buey/buey.module').then( m => m.BueyPageModule)
-  },
-  {
-    path: 'pollo',
-    loadChildren: () => import('./pages/pollo/pollo.module').then( m => m.PolloPageModule)
-  },
-  {
-    path: 'cebolla',
-    loadChildren: () => import('./pages/cebolla/cebolla.module').then( m => m.CebollaPageModule)
-  },
-  {
-    path: 'cerdo',
-    loadChildren: () => import('./pages/cerdo/cerdo.module').then( m => m.CerdoPageModule)
-  },
-  {
-    path: 'cordero',
-    loadChildren: () => import('./pages/cordero/cordero.module').then( m => m.CorderoPageModule)
-  },
-  {
-    path: 'kiwi',
-    loadChildren: () => import('./pages/kiwi/kiwi.module').then( m => m.KiwiPageModule)
-  },
-  {
-    path: 'naranja',
-    loadChildren: () => import('./pages/naranja/naranja.module').then( m => m.NaranjaPageModule)
-  },
-  {
-    path: 'palta',
-    loadChildren: () => import('./pages/palta/palta.module').then( m => m.PaltaPageModule)
-  },
-  {
-    path: 'pan',
-    loadChildren: () => import('./pages/pan/pan.module').then( m => m.PanPageModule)
-  },
-  {
-    path: 'pepino',
-    loadChildren: () => import('./pages/pepino/pepino.module').then( m => m.PepinoPageModule)
-  },
-  {
-    path: 'pera',
-    loadChildren: () => import('./pages/pera/pera.module').then( m => m.PeraPageModule)
-  },
-  {
-    path: 'pescado',
-    loadChildren: () => import('./pages/pescado/pescado.module').then( m => m.PescadoPageModule)
-  },
-  {
-    path: 'res',
-    loadChildren: () => import('./pages/res/res.module').then( m => m.ResPageModule)
-  },
-  {
-    path: 'salmon',
-    loadChildren: () => import('./pages/salmon/salmon.module').then( m => m.SalmonPageModule)
-  },
-  {
-    path: 'sandia',
-    loadChildren: () => import('./pages/sandia/sandia.module').then( m => m.SandiaPageModule)
-  },
-  {
-    path: 'tomate',
-    loadChildren: () => import('./pages/tomate/tomate.module').then( m => m.TomatePageModule)
-  },
-  {
-    path: 'vacuno',
-    loadChildren: () => import('./pages/vacuno/vacuno.module').then( m => m.VacunoPageModule)
-  },
-  {
-    path: 'uva',
-    loadChildren: () => import('./pages/uva/uva.module').then( m => m.UvaPageModule)
-  },
+
+  
   {
     path: 'perfilusario',
     loadChildren: () => import('./pages/perfilusario/perfilusario.module').then( m => m.PerfilusarioPageModule)
@@ -171,7 +93,11 @@ const routes: Routes = [
     path: 'detalle-producto',
     loadChildren: () => import('./pages/producto/detalle-producto/detalle-producto.module').then( m => m.DetalleProductoPageModule)
   },
-  { path: 'recuperar-contrasena', component: RecuperarContrasenaComponent },
+  { path: 'recuperar-contrasena', component: RecuperarContrasenaComponent },  {
+    path: 'mapa',
+    loadChildren: () => import('./pages/mapa/mapa.module').then( m => m.MapaPageModule)
+  },
+
 
 
 
