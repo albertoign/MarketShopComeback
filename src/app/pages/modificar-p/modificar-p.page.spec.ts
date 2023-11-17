@@ -5,11 +5,11 @@ describe('ModificarPPage', () => {
   let component: ModificarPPage;
   let fixture: ComponentFixture<ModificarPPage>;
 
-  beforeEach(async(() => {
+  beforeEach(async() => {
     fixture = TestBed.createComponent(ModificarPPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  }));
+  });
 
   it('should create', () => {
     expect(component).toBeTruthy();
